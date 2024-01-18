@@ -1,0 +1,54 @@
+@import '@/styles/constants';
+
+.courseWrapper {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  background-image: url('@/assets/svg/white-background.svg');
+}
+
+.courseHeading.mainHeading,
+.courseHeading.subHeading,
+.courseHeading.info {
+  color: black;
+  text-align: center;
+}
+
+.courseHeading.mainHeading {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.courseHeading.subHeading {
+  font-size: 1.5rem;
+}
+
+.courseHeading.info {
+  font-size: 1.3rem;
+}
+
+.link {
+  transition: 0.3s all;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: $laptop) {
+  .courseHeading.mainHeading {
+    font-size: calc(3vw + 14px);
+  }
+
+  .courseHeading.subHeading,
+  .courseHeading.info {
+    font-size: calc(3vw + 7px);
+  }
+}
+
+@media (max-width: $tablet-540-width) {
+  .logoWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

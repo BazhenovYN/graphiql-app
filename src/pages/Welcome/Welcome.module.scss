@@ -1,0 +1,11 @@
+@import '@/styles/constants';
+
+.welcomeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+  background-color: $main-color;
+  background-image: url('@/assets/svg/blue-background.svg');
+}

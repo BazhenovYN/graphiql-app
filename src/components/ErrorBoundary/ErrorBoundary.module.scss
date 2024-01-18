@@ -1,0 +1,34 @@
+@import '@/styles/constants';
+
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url('@/assets/svg/white-background.svg');
+}
+
+#title {
+  text-align: center;
+}
+
+.link {
+  font-size: 2rem;
+}
+
+@media (max-width: $tablet-540-width) {
+  .errorWrapper {
+    padding: 0 0.7rem;
+  }
+
+  #title {
+    font-size: calc(5vw + 11px);
+  }
+
+  .link {
+    font-size: calc(3vw + 11px);
+  }
+}

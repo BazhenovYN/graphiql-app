@@ -1,0 +1,74 @@
+@import '@/styles/constants';
+
+.imgWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 96rem;
+  padding: 0 5rem 5rem;
+  margin: 0 auto;
+}
+
+.welcomeSectionImg {
+  width: 100%;
+  height: auto;
+}
+
+#youtubeLink {
+  display: flex;
+  height: 5rem;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #0046b8;
+  text-align: center;
+  white-space: normal;
+}
+
+#youtubeLink:hover {
+  color: #dceefe;
+}
+
+@media (max-width: $laptop) {
+  #youtubeLink {
+    height: 4.5rem;
+    padding: 0.5rem;
+    font-size: calc(3vw + 5px);
+  }
+}
+
+@media (max-width: $tablet) {
+  .imgWrapper {
+    padding: 0 1rem 1rem;
+  }
+
+  #youtubeLink {
+    font-size: calc(3vw + 5px);
+  }
+}
+
+@media (max-width: $tablet-540-width) {
+  .imgWrapper {
+    display: none;
+  }
+
+  #youtubeLink {
+    max-width: 19rem;
+    margin-bottom: 3rem;
+    font-size: calc(2vw + 17px);
+    white-space: normal;
+  }
+}
+
+@media (min-width: $big-laptop) {
+  #youtubeLink {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: $wide-screen) {
+  #youtubeLink {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+}

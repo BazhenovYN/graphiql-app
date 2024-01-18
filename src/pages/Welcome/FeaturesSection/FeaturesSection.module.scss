@@ -1,0 +1,48 @@
+@import '@/styles/constants';
+
+.featuresSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url('@/assets/svg/white-background.svg');
+}
+
+.cardsWrapper {
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 96rem;
+  padding: 4rem 2rem;
+}
+
+.featureCardHeading.featureHeading {
+  font-size: 1.75rem;
+}
+
+.featureCard.card {
+  border: 2px solid $main-color;
+  box-shadow: 15px 17px $main-color;
+}
+
+@media (max-width: $laptop) {
+  .featureCardHeading.featureHeading {
+    font-size: calc(2vw + 7px);
+  }
+
+  .ant-card-body {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: $tablet) {
+  .cardsWrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: $tablet-540-width) {
+  .featureCardHeading.featureHeading {
+    font-size: 1.125rem;
+  }
+}
